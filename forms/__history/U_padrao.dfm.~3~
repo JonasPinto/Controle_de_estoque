@@ -1,0 +1,97 @@
+object Frm_padrao: TFrm_padrao
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Formulario padr'#227'o'
+  ClientHeight = 476
+  ClientWidth = 827
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 827
+    Height = 57
+    Align = alTop
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 0
+    object bt_novo: TBitBtn
+      Left = 0
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Novo'
+      TabOrder = 0
+    end
+    object bt_atualizar: TBitBtn
+      Left = 490
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Atualizar'
+      TabOrder = 1
+    end
+    object bt_deletar: TBitBtn
+      Left = 98
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Deletar'
+      TabOrder = 2
+    end
+    object bt_cancelar: TBitBtn
+      Left = 392
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Cancelar'
+      TabOrder = 3
+    end
+    object bt_gravar: TBitBtn
+      Left = 294
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Gravar'
+      TabOrder = 4
+    end
+    object bt_editar: TBitBtn
+      Left = 196
+      Top = 0
+      Width = 92
+      Height = 45
+      Caption = 'Editar'
+      TabOrder = 5
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 435
+    Width = 827
+    Height = 41
+    Align = alBottom
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitLeft = 416
+    ExplicitTop = 296
+    ExplicitWidth = 185
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 192
+    Top = 272
+    Width = 570
+    Height = 25
+    TabOrder = 2
+  end
+end
