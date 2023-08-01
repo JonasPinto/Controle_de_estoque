@@ -1,5 +1,6 @@
 inherited Frm_empresa: TFrm_empresa
   Caption = 'cadastro da empresa'
+  ExplicitLeft = -97
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -91,7 +92,7 @@ inherited Frm_empresa: TFrm_empresa
     FocusControl = DBEdit14
   end
   object Label12: TLabel [11]
-    Left = 580
+    Left = 576
     Top = 66
     Width = 52
     Height = 13
@@ -141,7 +142,7 @@ inherited Frm_empresa: TFrm_empresa
   object db_razao_social: TDBEdit [19]
     Left = 16
     Top = 106
-    Width = 504
+    Width = 500
     Height = 21
     DataField = 'RAZAO_SOCIAL'
     DataSource = ds_padrao
@@ -150,7 +151,7 @@ inherited Frm_empresa: TFrm_empresa
   object DBEdit3: TDBEdit [20]
     Left = 16
     Top = 146
-    Width = 504
+    Width = 500
     Height = 21
     DataField = 'N_FANTASIA'
     DataSource = ds_padrao
@@ -168,7 +169,7 @@ inherited Frm_empresa: TFrm_empresa
   object DBEdit5: TDBEdit [22]
     Left = 386
     Top = 186
-    Width = 134
+    Width = 130
     Height = 21
     DataField = 'NUMERO'
     DataSource = ds_padrao
@@ -177,7 +178,7 @@ inherited Frm_empresa: TFrm_empresa
   object DBEdit6: TDBEdit [23]
     Left = 16
     Top = 229
-    Width = 504
+    Width = 500
     Height = 21
     DataField = 'BAIRRO'
     DataSource = ds_padrao

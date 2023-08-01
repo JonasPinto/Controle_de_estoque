@@ -91,7 +91,7 @@ inherited Frm_empresa: TFrm_empresa
     FocusControl = DBEdit14
   end
   object Label12: TLabel [11]
-    Left = 580
+    Left = 576
     Top = 66
     Width = 52
     Height = 13
