@@ -12,7 +12,7 @@ type
     Panel1: TPanel;
     bt_empresa: TSpeedButton;
     bt_usuario: TSpeedButton;
-    SpeedButton3: TSpeedButton;
+    bt_cliente: TSpeedButton;
     SpeedButton4: TSpeedButton;
     SpeedButton5: TSpeedButton;
     SpeedButton6: TSpeedButton;
@@ -47,6 +47,9 @@ type
     procedure abre_tela_empresa();
     procedure Empresa1Click(Sender: TObject);
     procedure bt_empresaClick(Sender: TObject);
+    procedure bt_clienteClick(Sender: TObject);
+    procedure abre_tela_cliente();
+    procedure Clientes1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,7 +63,19 @@ implementation
 
 {$R *.dfm}
 
-uses U_usuario, U_empresa;
+uses U_usuario, U_empresa, U_cliente;
+
+procedure TFrm_principal.abre_tela_cliente;
+begin
+ frm_cliente:=tfrm_cliente.create(self);
+ frm_cliente.ShowModal;
+ try
+
+finally
+  frm_cliente.Free;
+  frm_cliente:=nil;
+ end;
+end;
 
 procedure TFrm_principal.abre_tela_empresa;
 begin
@@ -91,6 +106,11 @@ begin
   abre_tela_usuario;
 end;
 
+procedure TFrm_principal.Clientes1Click(Sender: TObject);
+begin
+ abre_tela_cliente;
+end;
+
 procedure TFrm_principal.Empresa1Click(Sender: TObject);
 begin
  abre_tela_empresa;
@@ -107,6 +127,11 @@ begin
 close;
 end;
 
+
+procedure TFrm_principal.bt_clienteClick(Sender: TObject);
+begin
+  abre_tela_cliente();
+end;
 
 procedure TFrm_principal.bt_empresaClick(Sender: TObject);
 begin
