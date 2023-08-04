@@ -118,7 +118,7 @@ end;
 
 procedure TFrm_principal.SpeedButton10Click(Sender: TObject);
 begin
- if MessageDlg('Deseja sair do sistema?', mtconfirmation,[mbOk,mbNo],0)=mrOk then
+ if MessageDlg('Deseja sair do sistema?', mtconfirmation,[mbYES,mbNO],0)=mrYES then
     begin
       application.terminate;
     end
