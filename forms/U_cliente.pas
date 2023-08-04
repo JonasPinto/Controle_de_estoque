@@ -22,7 +22,6 @@ type
     q_padraoCEP: TStringField;
     q_padraoTELEFONE: TStringField;
     q_padraoCPF: TStringField;
-    q_padraoEMAIL: TStringField;
     q_padraoCADASTRO: TDateField;
     Label1: TLabel;
     DBEdit1: TDBEdit;
@@ -46,6 +45,7 @@ type
     DBEdit10: TDBEdit;
     Label12: TLabel;
     db_cadastro: TDBEdit;
+    procedure db_cadastroChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,5 +58,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFrm_cliente.db_cadastroChange(Sender: TObject);
+begin
+  inherited;
+ db_cadastro.text:=datetostr(now);
+ db_nome.setfocus;
+end;
 
 end.
