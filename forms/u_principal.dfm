@@ -1075,7 +1075,7 @@ object Frm_principal: TFrm_principal
       Layout = blGlyphTop
       OnClick = bt_usuarioClick
     end
-    object SpeedButton3: TSpeedButton
+    object bt_cliente: TSpeedButton
       Left = 240
       Top = 0
       Width = 100
@@ -1599,6 +1599,7 @@ object Frm_principal: TFrm_principal
         47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
         47004C704700}
       Layout = blGlyphTop
+      OnClick = bt_clienteClick
     end
     object SpeedButton4: TSpeedButton
       Left = 361
@@ -5308,6 +5309,7 @@ object Frm_principal: TFrm_principal
       end
       object Clientes1: TMenuItem
         Caption = 'Clientes'
+        OnClick = Clientes1Click
       end
       object Fornecedores1: TMenuItem
         Caption = 'Fornecedores'
