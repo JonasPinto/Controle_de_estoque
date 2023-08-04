@@ -1,16 +1,15 @@
 inherited Frm_cliente: TFrm_cliente
   Caption = 'CADASTRO DE CLIENTE'
-  ClientHeight = 717
-  ExplicitTop = -10
-  ExplicitHeight = 746
+  ClientHeight = 453
+  ExplicitHeight = 482
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
     Left = 24
     Top = 64
-    Width = 58
+    Width = 106
     Height = 13
-    Caption = 'ID_CLIENTE'
+    Caption = 'C'#211'DIGO DO  CLIENTE'
     FocusControl = DBEdit1
   end
   object Label2: TLabel [1]
@@ -26,7 +25,7 @@ inherited Frm_cliente: TFrm_cliente
     Top = 150
     Width = 54
     Height = 13
-    Caption = 'ENDERECO'
+    Caption = 'ENDERE'#199'O'
     FocusControl = DBEdit3
   end
   object Label4: TLabel [3]
@@ -34,7 +33,7 @@ inherited Frm_cliente: TFrm_cliente
     Top = 150
     Width = 43
     Height = 13
-    Caption = 'NUMERO'
+    Caption = 'N'#218'MERO'
     FocusControl = DBEdit4
   end
   object Label5: TLabel [4]
@@ -86,26 +85,28 @@ inherited Frm_cliente: TFrm_cliente
     FocusControl = DBEdit10
   end
   object Label12: TLabel [10]
-    Left = 196
+    Left = 188
     Top = 64
-    Width = 55
+    Width = 101
     Height = 13
-    Caption = 'CADASTRO'
+    Caption = 'DATA DE CADASTRO'
     FocusControl = db_cadastro
   end
   inherited Panel2: TPanel
-    Top = 676
+    Top = 412
   end
   inherited DBNavigator1: TDBNavigator
-    Top = 645
+    Left = 196
+    Top = 420
     Hints.Strings = ()
-    ExplicitTop = 645
+    ExplicitLeft = 196
+    ExplicitTop = 420
   end
   object DBEdit1: TDBEdit [15]
     Left = 24
     Top = 80
     Width = 137
-    Height = 21
+    Height = 20
     DataField = 'ID_CLIENTE'
     DataSource = ds_padrao
     TabOrder = 4
@@ -114,7 +115,7 @@ inherited Frm_cliente: TFrm_cliente
     Left = 24
     Top = 123
     Width = 600
-    Height = 21
+    Height = 20
     DataField = 'NOME'
     DataSource = ds_padrao
     TabOrder = 5
@@ -192,13 +193,14 @@ inherited Frm_cliente: TFrm_cliente
     TabOrder = 13
   end
   object db_cadastro: TDBEdit [25]
-    Left = 196
-    Top = 83
+    Left = 188
+    Top = 80
     Width = 134
-    Height = 21
+    Height = 20
     DataField = 'CADASTRO'
     DataSource = ds_padrao
     TabOrder = 14
+    OnChange = db_cadastroChange
   end
   inherited q_padrao: TFDQuery
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
@@ -282,12 +284,6 @@ inherited Frm_cliente: TFrm_cliente
       Required = True
       EditMask = '000\.000\.000\-00;0;_'
       Size = 16
-    end
-    object q_padraoEMAIL: TStringField
-      FieldName = 'EMAIL'
-      Origin = 'EMAIL'
-      Required = True
-      Size = 100
     end
     object q_padraoCADASTRO: TDateField
       FieldName = 'CADASTRO'
