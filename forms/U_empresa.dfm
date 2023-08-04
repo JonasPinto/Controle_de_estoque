@@ -3,8 +3,8 @@ inherited Frm_empresa: TFrm_empresa
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
-    Left = 16
-    Top = 50
+    Left = 17
+    Top = 51
     Width = 63
     Height = 13
     Caption = 'ID_EMPRESA'
@@ -107,8 +107,8 @@ inherited Frm_empresa: TFrm_empresa
     FocusControl = DBEdit11
   end
   object Label13: TLabel [13]
-    Left = 156
-    Top = 50
+    Left = 157
+    Top = 51
     Width = 55
     Height = 13
     Caption = 'CADASTRO'
@@ -130,8 +130,8 @@ inherited Frm_empresa: TFrm_empresa
     TabOrder = 17
   end
   object DBEdit1: TDBEdit [18]
-    Left = 16
-    Top = 66
+    Left = 17
+    Top = 69
     Width = 134
     Height = 21
     DataField = 'ID_EMPRESA'
@@ -248,13 +248,12 @@ inherited Frm_empresa: TFrm_empresa
     TabOrder = 11
   end
   object db_cadastro: TDBEdit [31]
-    Left = 156
-    Top = 66
+    Left = 157
+    Top = 69
     Width = 134
     Height = 21
     DataField = 'CADASTRO'
     DataSource = ds_padrao
-    Enabled = False
     TabOrder = 1
   end
   object bt_foto: TBitBtn [32]
@@ -559,7 +558,7 @@ inherited Frm_empresa: TFrm_empresa
       '      cnpj'
       'from empresa'
       '')
-    Left = 360
+    Left = 440
     Top = 56
     object q_padraoID_EMPRESA: TIntegerField
       FieldName = 'ID_EMPRESA'
@@ -645,11 +644,11 @@ inherited Frm_empresa: TFrm_empresa
     end
   end
   inherited ds_padrao: TDataSource
-    Left = 408
+    Left = 496
     Top = 56
   end
   object OpenDialog1: TOpenDialog
-    Left = 304
+    Left = 376
     Top = 56
   end
 end
