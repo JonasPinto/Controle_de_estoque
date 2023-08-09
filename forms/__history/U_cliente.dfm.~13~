@@ -94,7 +94,6 @@ inherited Frm_cliente: TFrm_cliente
   end
   inherited Panel2: TPanel
     Top = 412
-    ExplicitTop = 412
   end
   inherited DBNavigator1: TDBNavigator
     Left = 196
@@ -107,7 +106,7 @@ inherited Frm_cliente: TFrm_cliente
     Left = 24
     Top = 80
     Width = 137
-    Height = 21
+    Height = 20
     DataField = 'ID_CLIENTE'
     DataSource = ds_padrao
     TabOrder = 4
@@ -116,7 +115,7 @@ inherited Frm_cliente: TFrm_cliente
     Left = 24
     Top = 123
     Width = 600
-    Height = 21
+    Height = 20
     DataField = 'NOME'
     DataSource = ds_padrao
     TabOrder = 5
@@ -197,7 +196,7 @@ inherited Frm_cliente: TFrm_cliente
     Left = 188
     Top = 80
     Width = 134
-    Height = 21
+    Height = 20
     DataField = 'CADASTRO'
     DataSource = ds_padrao
     TabOrder = 14
@@ -228,7 +227,6 @@ inherited Frm_cliente: TFrm_cliente
       FieldName = 'ID_CLIENTE'
       Origin = 'ID_CLIENTE'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_padraoNOME: TStringField
       FieldName = 'NOME'

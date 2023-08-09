@@ -136,11 +136,6 @@ begin
   abre_tela_usuario;
 end;
 
-procedure TFrm_principal.Usuario1Click(Sender: TObject);
-begin
- abre_tela_usuario;
-end;
-
 procedure TFrm_principal.Clientes1Click(Sender: TObject);
 begin
  abre_tela_cliente;
@@ -189,6 +184,12 @@ begin
   statusbar1.Panels[1].Text:=timetostr(now);
   statusbar1.panels[2].text:='SEJA BEM VINDO AO SISTEMA';
 
+end;
+
+
+procedure TFrm_principal.Usuario1Click(Sender: TObject);
+begin
+ abre_tela_usuario;
 end;
 
 end.

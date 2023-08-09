@@ -119,9 +119,6 @@ inherited Frm_empresa: TFrm_empresa
   end
   inherited Panel2: TPanel
     TabOrder = 15
-    ExplicitLeft = 8
-    ExplicitTop = 321
-    ExplicitWidth = 824
     inherited DBNavigator1: TDBNavigator
       Top = 443
       Hints.Strings = ()

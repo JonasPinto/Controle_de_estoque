@@ -1021,8 +1021,8 @@ object Frm_padrao: TFrm_padrao
     ExplicitTop = 435
     ExplicitWidth = 827
     object DBNavigator1: TDBNavigator
-      Left = 212
-      Top = 8
+      Left = 222
+      Top = 16
       Width = 400
       Height = 25
       DataSource = ds_padrao

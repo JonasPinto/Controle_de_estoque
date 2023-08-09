@@ -2126,7 +2126,7 @@ object Frm_principal: TFrm_principal
       Layout = blGlyphTop
       OnClick = bt_fornecedorClick
     end
-    object bt_produto: TSpeedButton
+    object SpeedButton5: TSpeedButton
       Left = 481
       Top = 0
       Width = 100
@@ -2651,7 +2651,7 @@ object Frm_principal: TFrm_principal
         47004C704700}
       Layout = blGlyphTop
     end
-    object bt_forma_pgto: TSpeedButton
+    object SpeedButton6: TSpeedButton
       Left = 602
       Top = 0
       Width = 100
@@ -3175,7 +3175,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
     end
-    object bt_compra: TSpeedButton
+    object SpeedButton7: TSpeedButton
       Left = 722
       Top = 0
       Width = 100
@@ -3700,7 +3700,7 @@ object Frm_principal: TFrm_principal
         47004C704700}
       Layout = blGlyphTop
     end
-    object bt_venda: TSpeedButton
+    object SpeedButton8: TSpeedButton
       Left = 843
       Top = 0
       Width = 100
@@ -4225,7 +4225,7 @@ object Frm_principal: TFrm_principal
         47004C704700}
       Layout = blGlyphTop
     end
-    object bt_troca_usuario: TSpeedButton
+    object SpeedButton9: TSpeedButton
       Left = 963
       Top = 0
       Width = 100
@@ -4749,7 +4749,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
     end
-    object bt_fechar: TSpeedButton
+    object SpeedButton10: TSpeedButton
       Left = 1084
       Top = 0
       Width = 100
@@ -5272,7 +5272,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
-      OnClick = bt_fecharClick
+      OnClick = SpeedButton10Click
     end
   end
   object StatusBar1: TStatusBar
@@ -5303,7 +5303,6 @@ object Frm_principal: TFrm_principal
       Caption = 'Cadastro'
       object Usuario1: TMenuItem
         Caption = 'Usu'#225'rio'
-        OnClick = Usuario1Click
       end
       object Empresa1: TMenuItem
         Caption = 'Empresa'
@@ -5313,15 +5312,12 @@ object Frm_principal: TFrm_principal
         Caption = 'Clientes'
         OnClick = Clientes1Click
       end
-      object fornecedores1: TMenuItem
+      object menu_fornecedor: TMenuItem
         Caption = 'Fornecedores'
-        OnClick = fornecedores1Click
-      end
-      object Produtos1: TMenuItem
-        Caption = 'Produtos'
+        OnClick = menu_fornecedorClick
       end
       object FormaPgto1: TMenuItem
-        Caption = 'Formas Pgto'
+        Caption = 'Forma Pgto'
       end
     end
     object Movimentos1: TMenuItem

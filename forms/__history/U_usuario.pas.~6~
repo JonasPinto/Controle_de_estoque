@@ -62,8 +62,6 @@ implementation
 
 {$R *.dfm}
 
-uses u_principal;
-
 procedure TFrm_usuario.bt_novoClick(Sender: TObject);
 begin
   inherited;
