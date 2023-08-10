@@ -131,6 +131,7 @@ begin
  end
 end;
 
+// ao clicar no botao bt_usuario a tela de usuario abre
 procedure TFrm_principal.bt_usuarioClick(Sender: TObject);
 begin
   abre_tela_usuario;
