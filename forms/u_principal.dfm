@@ -1075,7 +1075,7 @@ object Frm_principal: TFrm_principal
       Layout = blGlyphTop
       OnClick = bt_usuarioClick
     end
-    object SpeedButton3: TSpeedButton
+    object bt_cliente: TSpeedButton
       Left = 240
       Top = 0
       Width = 100
@@ -1599,8 +1599,9 @@ object Frm_principal: TFrm_principal
         47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
         47004C704700}
       Layout = blGlyphTop
+      OnClick = bt_clienteClick
     end
-    object SpeedButton4: TSpeedButton
+    object bt_fornecedor: TSpeedButton
       Left = 361
       Top = 0
       Width = 100
@@ -2123,8 +2124,9 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
+      OnClick = bt_fornecedorClick
     end
-    object SpeedButton5: TSpeedButton
+    object bt_produto: TSpeedButton
       Left = 481
       Top = 0
       Width = 100
@@ -2648,8 +2650,9 @@ object Frm_principal: TFrm_principal
         47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
         47004C704700}
       Layout = blGlyphTop
+      OnClick = bt_produtoClick
     end
-    object SpeedButton6: TSpeedButton
+    object bt_forma_pgto: TSpeedButton
       Left = 602
       Top = 0
       Width = 100
@@ -3172,8 +3175,9 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
+      OnClick = bt_forma_pgtoClick
     end
-    object SpeedButton7: TSpeedButton
+    object bt_compra: TSpeedButton
       Left = 722
       Top = 0
       Width = 100
@@ -3698,7 +3702,7 @@ object Frm_principal: TFrm_principal
         47004C704700}
       Layout = blGlyphTop
     end
-    object SpeedButton8: TSpeedButton
+    object bt_venda: TSpeedButton
       Left = 843
       Top = 0
       Width = 100
@@ -4223,7 +4227,7 @@ object Frm_principal: TFrm_principal
         47004C704700}
       Layout = blGlyphTop
     end
-    object SpeedButton9: TSpeedButton
+    object bt_troca_usuario: TSpeedButton
       Left = 963
       Top = 0
       Width = 100
@@ -4747,7 +4751,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
     end
-    object SpeedButton10: TSpeedButton
+    object bt_fechar: TSpeedButton
       Left = 1084
       Top = 0
       Width = 100
@@ -5270,7 +5274,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
-      OnClick = SpeedButton10Click
+      OnClick = bt_fecharClick
     end
   end
   object StatusBar1: TStatusBar
@@ -5301,6 +5305,7 @@ object Frm_principal: TFrm_principal
       Caption = 'Cadastro'
       object Usuario1: TMenuItem
         Caption = 'Usu'#225'rio'
+        OnClick = Usuario1Click
       end
       object Empresa1: TMenuItem
         Caption = 'Empresa'
@@ -5308,12 +5313,17 @@ object Frm_principal: TFrm_principal
       end
       object Clientes1: TMenuItem
         Caption = 'Clientes'
+        OnClick = Clientes1Click
       end
-      object Fornecedores1: TMenuItem
+      object fornecedores1: TMenuItem
         Caption = 'Fornecedores'
+        OnClick = fornecedores1Click
+      end
+      object Produtos1: TMenuItem
+        Caption = 'Produtos'
       end
       object FormaPgto1: TMenuItem
-        Caption = 'Forma Pgto'
+        Caption = 'Formas Pgto'
       end
     end
     object Movimentos1: TMenuItem

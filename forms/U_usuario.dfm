@@ -1,6 +1,5 @@
 inherited Frm_usuario: TFrm_usuario
   Caption = 'Cadastro de Usuario '
-  ExplicitTop = -110
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -44,17 +43,20 @@ inherited Frm_usuario: TFrm_usuario
   end
   inherited Panel1: TPanel
     TabOrder = 5
+    ExplicitWidth = 824
   end
   inherited Panel2: TPanel
     TabOrder = 6
+    ExplicitTop = 310
+    ExplicitWidth = 824
+    inherited DBNavigator1: TDBNavigator
+      Top = 443
+      Hints.Strings = ()
+      ExplicitTop = 443
+    end
   end
-  inherited DBNavigator1: TDBNavigator
-    Left = 214
-    Top = 443
-    Hints.Strings = ()
+  inherited bt_sair: TBitBtn
     TabOrder = 7
-    ExplicitLeft = 214
-    ExplicitTop = 443
   end
   object DBEdit1: TDBEdit [8]
     Left = 120
@@ -106,9 +108,6 @@ inherited Frm_usuario: TFrm_usuario
       'ADMINISTRADOR'
       'APOIO')
     TabOrder = 3
-  end
-  inherited bt_sair: TBitBtn
-    TabOrder = 8
   end
   inherited q_padrao: TFDQuery
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]

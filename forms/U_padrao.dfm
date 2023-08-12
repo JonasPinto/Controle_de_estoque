@@ -3,8 +3,8 @@ object Frm_padrao: TFrm_padrao
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Formulario padr'#227'o'
-  ClientHeight = 476
-  ClientWidth = 827
+  ClientHeight = 471
+  ClientWidth = 824
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,12 +20,13 @@ object Frm_padrao: TFrm_padrao
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 827
+    Width = 824
     Height = 45
     Align = alTop
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 827
     object bt_novo: TBitBtn
       Left = 0
       Top = -1
@@ -1010,22 +1011,24 @@ object Frm_padrao: TFrm_padrao
   end
   object Panel2: TPanel
     Left = 0
-    Top = 435
-    Width = 827
+    Top = 430
+    Width = 824
     Height = 41
     Align = alBottom
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 1
-  end
-  object DBNavigator1: TDBNavigator
-    Left = 214
-    Top = 440
-    Width = 400
-    Height = 25
-    DataSource = ds_padrao
-    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
-    TabOrder = 2
+    ExplicitTop = 435
+    ExplicitWidth = 827
+    object DBNavigator1: TDBNavigator
+      Left = 212
+      Top = 8
+      Width = 400
+      Height = 25
+      DataSource = ds_padrao
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      TabOrder = 0
+    end
   end
   object bt_sair: TBitBtn
     Left = 686
@@ -1164,7 +1167,7 @@ object Frm_padrao: TFrm_padrao
       D1813986D4813C89D581418CD681448DD6813F8BD581428CD681428DD681428C
       D6813F8BD5813B88D5813685D3813182D2812E7FD1812D7CCE702D7ACB040000
       0000000000000000000000000000000000000000000000000000}
-    TabOrder = 3
+    TabOrder = 2
     OnClick = bt_sairClick
   end
   object q_padrao: TFDQuery

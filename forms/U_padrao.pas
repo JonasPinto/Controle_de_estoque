@@ -20,11 +20,11 @@ type
     bt_cancelar: TBitBtn;
     bt_gravar: TBitBtn;
     bt_editar: TBitBtn;
-    DBNavigator1: TDBNavigator;
     bt_Pesquisar: TBitBtn;
     q_padrao: TFDQuery;
     ds_padrao: TDataSource;
     bt_sair: TBitBtn;
+    DBNavigator1: TDBNavigator;
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure bt_novoClick(Sender: TObject);
     procedure bt_deletarClick(Sender: TObject);

@@ -3,24 +3,37 @@
 	<Transactions>
     <Transaction>2023/07/20 19:00:07.000.016,=C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/07/21 00:53:47.000.494,=C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/07/21 00:57:05.000.816,C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\estoque\forms\u_principal.pas</Transaction>
     <Transaction>2023/07/21 00:57:05.000.816,C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\estoque\forms\u_principal.dfm</Transaction>
+    <Transaction>2023/07/21 00:57:05.000.816,C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\estoque\forms\u_principal.pas</Transaction>
     <Transaction>2023/07/21 00:59:25.000.830,C:\Users\jonas\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\estoque\projeto\controle_estoque.dproj</Transaction>
     <Transaction>2023/07/24 14:15:45.000.657,=C:\estoque\projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/24 14:40:27.000.920,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_DM.pas</Transaction>
     <Transaction>2023/07/24 14:40:27.000.920,C:\estoque\projeto\Unit1.dfm=C:\estoque\forms\U_DM.dfm</Transaction>
+    <Transaction>2023/07/24 14:40:27.000.920,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_DM.pas</Transaction>
     <Transaction>2023/07/24 15:34:40.000.967,=C:\estoque\projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/24 15:36:35.000.094,C:\estoque\projeto\Unit1.dfm=C:\estoque\forms\U_padrao.dfm</Transaction>
     <Transaction>2023/07/24 15:36:35.000.094,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_padrao.pas</Transaction>
+    <Transaction>2023/07/24 15:36:35.000.094,C:\estoque\projeto\Unit1.dfm=C:\estoque\forms\U_padrao.dfm</Transaction>
     <Transaction>2023/07/24 22:34:45.000.190,=C:\estoque\projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/24 22:40:56.000.861,=C:\estoque\projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/24 22:44:14.000.076,C:\estoque\projeto\Unit1.dfm=C:\estoque\forms\U_usuario.dfm</Transaction>
     <Transaction>2023/07/24 22:44:14.000.076,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_usuario.pas</Transaction>
     <Transaction>2023/07/31 14:58:34.000.090,=C:\estoque\projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/31 15:06:32.000.087,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_empresa.pas</Transaction>
     <Transaction>2023/07/31 15:06:32.000.087,C:\estoque\projeto\Unit1.dfm=C:\estoque\forms\U_empresa.dfm</Transaction>
-    <Transaction>2023/08/03 18:28:38.711,=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.pas</Transaction>
-    <Transaction>2023/08/03 18:30:17.842,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_cliente.pas=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.pas</Transaction>
-    <Transaction>2023/08/03 18:30:17.842,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_cliente.dfm=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.dfm</Transaction>
+    <Transaction>2023/07/31 15:06:32.000.087,C:\estoque\projeto\Unit1.pas=C:\estoque\forms\U_empresa.pas</Transaction>
+    <Transaction>2023/08/03 18:28:38.000.711,=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/03 18:30:17.000.842,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_cliente.dfm=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.dfm</Transaction>
+    <Transaction>2023/08/03 18:30:17.000.842,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_cliente.pas=C:\Users\jonas\OneDrive\GitHub\controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/04 11:46:39.000.277,=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/04 11:49:08.000.478,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_fornecedor.dfm=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.dfm</Transaction>
+    <Transaction>2023/08/04 11:49:08.000.478,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_fornecedor.pas=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/04 20:43:13.000.298,=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit1.pas</Transaction>
+    <Transaction>2023/08/10 23:23:17.000.502,=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/10 23:25:12.000.899,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.dfm=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_produto.dfm</Transaction>
+    <Transaction>2023/08/10 23:25:12.000.899,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_produto.pas</Transaction>
+    <Transaction>2023/08/11 14:13:01.955,=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/11 15:27:29.258,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_forma_pgto.pas=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.pas</Transaction>
+    <Transaction>2023/08/11 15:27:29.258,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_forma_pgto.dfm=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit2.dfm</Transaction>
+    <Transaction>2023/08/11 17:37:41.697,=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit1.pas</Transaction>
+    <Transaction>2023/08/11 17:38:32.452,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_form_pesquisa_padrao.dfm=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit1.dfm</Transaction>
+    <Transaction>2023/08/11 17:38:32.452,C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\forms\U_form_pesquisa_padrao.pas=C:\Users\jonas\OneDrive\GitHub\Controle_de_estoque\projeto\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>
