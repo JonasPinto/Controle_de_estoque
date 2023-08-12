@@ -2650,6 +2650,7 @@ object Frm_principal: TFrm_principal
         47004C7047004C7047004C7047004C7047004C7047004C7047004C7047004C70
         47004C704700}
       Layout = blGlyphTop
+      OnClick = bt_produtoClick
     end
     object bt_forma_pgto: TSpeedButton
       Left = 602
@@ -3174,6 +3175,7 @@ object Frm_principal: TFrm_principal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Layout = blGlyphTop
+      OnClick = bt_forma_pgtoClick
     end
     object bt_compra: TSpeedButton
       Left = 722

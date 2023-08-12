@@ -65,6 +65,10 @@ type
     procedure Usuario1Click(Sender: TObject);
     procedure bt_usuarioClick(Sender: TObject);
     procedure abre_tela_usuario();
+    procedure bt_produtoClick(Sender: TObject);
+    procedure abre_tela_produto();
+    procedure bt_forma_pgtoClick(Sender: TObject);
+    procedure abre_tela_forma_pgto();
 
   private
     { Private declarations }
@@ -79,8 +83,9 @@ implementation
 
 {$R *.dfm}
 
-uses U_usuario, U_empresa, U_cliente, U_fornecedor;
+uses U_usuario, U_empresa, U_cliente, U_fornecedor, U_produto, U_forma_pgto;
 
+// procedures para abrir telas
 procedure TFrm_principal.abre_tela_cliente;
 begin
  frm_cliente:=tfrm_cliente.create(self);
@@ -106,6 +111,18 @@ finally
 end;
 
 // Abre a tela de fornecedores
+procedure TFrm_principal.abre_tela_forma_pgto;
+begin
+ Frm_forma_pgto:=TFrm_forma_pgto.create(self);
+ Frm_forma_pgto.showmodal;
+ try
+
+ finally
+  Frm_forma_pgto.Free;
+  frm_fornecedor:=nil;
+ end
+end;
+
 procedure TFrm_principal.abre_tela_fornecedor;
 begin
  frm_fornecedor:=tfrm_fornecedor.create(self);
@@ -115,6 +132,18 @@ begin
  finally
   frm_fornecedor.Free;
   frm_fornecedor:=nil;
+ end
+end;
+
+procedure TFrm_principal.abre_tela_produto;
+begin
+ frm_produto:=tfrm_produto.create(self);
+ frm_produto.ShowModal;
+ try
+
+ finally
+  frm_produto.Free;
+  frm_produto:=nil;
  end
 end;
 
@@ -131,10 +160,10 @@ begin
  end
 end;
 
-// ao clicar no botao bt_usuario a tela de usuario abre
+// ao clicar no botao bt_xxxxxxxxx a tela correspondente se abre
 procedure TFrm_principal.bt_usuarioClick(Sender: TObject);
 begin
-  abre_tela_usuario;
+ abre_tela_usuario;
 end;
 
 procedure TFrm_principal.Usuario1Click(Sender: TObject);
@@ -157,22 +186,6 @@ begin
  abre_tela_fornecedor;
 end;
 
-procedure TFrm_principal.bt_fornecedorClick(Sender: TObject);
-begin
- abre_tela_fornecedor;
-end;
-
-procedure TFrm_principal.bt_fecharClick(Sender: TObject);
-begin
- if MessageDlg('Deseja sair do sistema?', mtconfirmation,[mbYES,mbNO],0)=mrYES then
-    begin
-      application.terminate;
-    end
-    else
-    abort;
-close;
-end;
-
 procedure TFrm_principal.bt_clienteClick(Sender: TObject);
 begin
  abre_tela_cliente;
@@ -181,6 +194,32 @@ end;
 procedure TFrm_principal.bt_empresaClick(Sender: TObject);
 begin
  abre_tela_empresa;
+end;
+
+procedure TFrm_principal.bt_forma_pgtoClick(Sender: TObject);
+begin
+ abre_tela_forma_pgto;
+end;
+
+procedure TFrm_principal.bt_fornecedorClick(Sender: TObject);
+begin
+ abre_tela_fornecedor;
+end;
+
+procedure TFrm_principal.bt_produtoClick(Sender: TObject);
+begin
+ abre_tela_produto;
+end;
+
+procedure TFrm_principal.bt_fecharClick(Sender: TObject);
+begin
+ if MessageDlg('Deseja sair do sistema?', mtconfirmation,[mbYES,mbNO],0)=mrYES then
+    begin
+     application.terminate;
+    end
+    else
+    abort;
+close;
 end;
 
 procedure TFrm_principal.Timer1Timer(Sender: TObject);

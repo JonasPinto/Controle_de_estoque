@@ -83,7 +83,7 @@ inherited frm_fornecedor: Tfrm_fornecedor
     FocusControl = DBEdit10
   end
   object Label11: TLabel [10]
-    Left = 173
+    Left = 183
     Top = 61
     Width = 55
     Height = 13
@@ -101,7 +101,7 @@ inherited frm_fornecedor: Tfrm_fornecedor
   inherited Panel2: TPanel
     Top = 414
     Height = 57
-    ExplicitTop = 520
+    ExplicitTop = 414
     ExplicitHeight = 57
     inherited DBNavigator1: TDBNavigator
       Top = 16
@@ -110,7 +110,7 @@ inherited frm_fornecedor: Tfrm_fornecedor
     end
   end
   object db_id_fornecedor: TDBEdit [15]
-    Left = 17
+    Left = 18
     Top = 80
     Width = 134
     Height = 21
@@ -200,7 +200,7 @@ inherited frm_fornecedor: Tfrm_fornecedor
     TabOrder = 12
   end
   object db_cadastro: TDBEdit [25]
-    Left = 173
+    Left = 183
     Top = 80
     Width = 134
     Height = 21
@@ -243,8 +243,7 @@ inherited frm_fornecedor: Tfrm_fornecedor
     object q_padraoID_FORNECEDOR: TFDAutoIncField
       FieldName = 'ID_FORNECEDOR'
       Origin = 'ID_FORNECEDOR'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      IdentityInsert = True
+      ProviderFlags = [pfInWhere, pfInKey]
     end
     object q_padraoNOME: TStringField
       FieldName = 'NOME'
@@ -286,18 +285,21 @@ inherited frm_fornecedor: Tfrm_fornecedor
       FieldName = 'CEP'
       Origin = 'CEP'
       Required = True
+      EditMask = '00000\-999;0;_'
       Size = 16
     end
     object q_padraoTELEFONE: TStringField
       FieldName = 'TELEFONE'
       Origin = 'TELEFONE'
       Required = True
+      EditMask = '!\(99\)00000-0000;0;_'
       Size = 16
     end
     object q_padraoCNPJ: TStringField
       FieldName = 'CNPJ'
       Origin = 'CNPJ'
       Required = True
+      EditMask = '00\.000\.000\/0000\-00;0;_'
     end
     object q_padraoEMAIL: TStringField
       FieldName = 'EMAIL'
