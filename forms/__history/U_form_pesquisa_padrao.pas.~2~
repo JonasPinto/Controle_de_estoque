@@ -1,0 +1,24 @@
+unit U_form_pesquisa_padrao;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  Tfrm_pesquisa_padrao = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_pesquisa_padrao: Tfrm_pesquisa_padrao;
+
+implementation
+
+{$R *.dfm}
+
+end.
