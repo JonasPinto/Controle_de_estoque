@@ -1,0 +1,23 @@
+inherited Frm_formas_de_: TFrm_formas_de_
+  Caption = 'CADASTRO DE FORMAS DE PAGAMENTO'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    ExplicitWidth = 824
+  end
+  inherited Panel2: TPanel
+    ExplicitTop = 430
+    ExplicitWidth = 824
+    inherited DBNavigator1: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+  inherited q_padrao: TFDQuery
+    Left = 368
+    Top = 160
+  end
+  inherited ds_padrao: TDataSource
+    Left = 368
+    Top = 216
+  end
+end
