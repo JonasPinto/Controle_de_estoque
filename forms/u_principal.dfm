@@ -5321,9 +5321,11 @@ object Frm_principal: TFrm_principal
       end
       object Produtos1: TMenuItem
         Caption = 'Produtos'
+        OnClick = Produtos1Click
       end
-      object FormaPgto1: TMenuItem
+      object forma_pgto: TMenuItem
         Caption = 'Formas Pgto'
+        OnClick = forma_pgtoClick
       end
     end
     object Movimentos1: TMenuItem
