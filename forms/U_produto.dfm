@@ -1,9 +1,5 @@
 inherited Frm_produto: TFrm_produto
   Caption = 'CADASTRO DE PRODUTOS'
-  ClientHeight = 386
-  ClientWidth = 832
-  ExplicitWidth = 838
-  ExplicitHeight = 415
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -86,12 +82,9 @@ inherited Frm_produto: TFrm_produto
     Caption = 'UNIDADE'
   end
   inherited Panel1: TPanel
-    Width = 832
     ExplicitWidth = 832
   end
   inherited Panel2: TPanel
-    Top = 345
-    Width = 832
     ExplicitTop = 345
     ExplicitWidth = 832
     inherited DBNavigator1: TDBNavigator
