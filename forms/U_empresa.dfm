@@ -1,5 +1,5 @@
 inherited Frm_empresa: TFrm_empresa
-  Caption = 'cadastro da empresa'
+  Caption = 'CADASTRO DE EMPRESA'
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -116,11 +116,11 @@ inherited Frm_empresa: TFrm_empresa
   end
   inherited Panel1: TPanel
     TabOrder = 14
+    ExplicitWidth = 824
   end
   inherited Panel2: TPanel
     TabOrder = 15
-    ExplicitLeft = 8
-    ExplicitTop = 321
+    ExplicitTop = 430
     ExplicitWidth = 824
     inherited DBNavigator1: TDBNavigator
       Top = 443
