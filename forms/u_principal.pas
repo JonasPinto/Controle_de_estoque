@@ -37,7 +37,7 @@ type
     Empresa1: TMenuItem;
     Clientes1: TMenuItem;
     fornecedores1: TMenuItem;
-    FormaPgto1: TMenuItem;
+    forma_pgto: TMenuItem;
     Movimentos1: TMenuItem;
     Compras1: TMenuItem;
     Vendas1: TMenuItem;
@@ -69,6 +69,8 @@ type
     procedure abre_tela_produto();
     procedure bt_forma_pgtoClick(Sender: TObject);
     procedure abre_tela_forma_pgto();
+    procedure Produtos1Click(Sender: TObject);
+    procedure forma_pgtoClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -181,9 +183,19 @@ begin
  abre_tela_empresa;
 end;
 
+procedure TFrm_principal.forma_pgtoClick(Sender: TObject);
+begin
+ abre_tela_forma_pgto;
+end;
+
 procedure TFrm_principal.fornecedores1Click(Sender: TObject);
 begin
  abre_tela_fornecedor;
+end;
+
+procedure TFrm_principal.Produtos1Click(Sender: TObject);
+begin
+ abre_tela_produto;
 end;
 
 procedure TFrm_principal.bt_clienteClick(Sender: TObject);
@@ -227,7 +239,7 @@ begin
                         // insere dados na stausbar
   statusbar1.panels[0].Text:=datetostr(now);
   statusbar1.Panels[1].Text:=timetostr(now);
-  statusbar1.panels[2].text:='SEJA BEM VINDO AO SISTEMA';
+  statusbar1.panels[2].Text:='SEJA BEM VINDO AO SISTEMA';
 
 end;
 
