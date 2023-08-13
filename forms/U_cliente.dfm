@@ -1,7 +1,5 @@
 inherited Frm_cliente: TFrm_cliente
   Caption = 'CADASTRO DE CLIENTE'
-  ClientHeight = 453
-  ExplicitHeight = 482
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -92,99 +90,102 @@ inherited Frm_cliente: TFrm_cliente
     Caption = 'DATA DE CADASTRO'
     FocusControl = db_cadastro
   end
+  inherited Panel1: TPanel
+    ExplicitWidth = 824
+  end
   inherited Panel2: TPanel
-    Top = 412
     ExplicitTop = 412
+    ExplicitWidth = 824
+    inherited DBNavigator1: TDBNavigator
+      Left = 196
+      Top = 420
+      Hints.Strings = ()
+      ExplicitLeft = 196
+      ExplicitTop = 420
+    end
   end
-  inherited DBNavigator1: TDBNavigator
-    Left = 196
-    Top = 420
-    Hints.Strings = ()
-    ExplicitLeft = 196
-    ExplicitTop = 420
-  end
-  object DBEdit1: TDBEdit [15]
+  object DBEdit1: TDBEdit [14]
     Left = 24
     Top = 80
     Width = 137
     Height = 21
     DataField = 'ID_CLIENTE'
     DataSource = ds_padrao
-    TabOrder = 4
+    TabOrder = 3
   end
-  object db_nome: TDBEdit [16]
+  object db_nome: TDBEdit [15]
     Left = 24
     Top = 123
     Width = 600
     Height = 21
     DataField = 'NOME'
     DataSource = ds_padrao
-    TabOrder = 5
+    TabOrder = 4
   end
-  object DBEdit3: TDBEdit [17]
+  object DBEdit3: TDBEdit [16]
     Left = 24
     Top = 169
     Width = 481
     Height = 21
     DataField = 'ENDERECO'
     DataSource = ds_padrao
-    TabOrder = 6
+    TabOrder = 5
   end
-  object DBEdit4: TDBEdit [18]
+  object DBEdit4: TDBEdit [17]
     Left = 528
     Top = 169
     Width = 96
     Height = 21
     DataField = 'NUMERO'
     DataSource = ds_padrao
-    TabOrder = 7
+    TabOrder = 6
   end
-  object DBEdit5: TDBEdit [19]
+  object DBEdit5: TDBEdit [18]
     Left = 24
     Top = 209
     Width = 600
     Height = 21
     DataField = 'BAIRRO'
     DataSource = ds_padrao
-    TabOrder = 8
+    TabOrder = 7
   end
-  object DBEdit6: TDBEdit [20]
+  object DBEdit6: TDBEdit [19]
     Left = 24
     Top = 255
     Width = 553
     Height = 21
     DataField = 'CIDADE'
     DataSource = ds_padrao
-    TabOrder = 9
+    TabOrder = 8
   end
-  object DBEdit7: TDBEdit [21]
+  object DBEdit7: TDBEdit [20]
     Left = 594
     Top = 252
     Width = 30
     Height = 21
     DataField = 'UF'
     DataSource = ds_padrao
-    TabOrder = 10
+    TabOrder = 9
   end
-  object DBEdit8: TDBEdit [22]
+  object DBEdit8: TDBEdit [21]
     Left = 24
     Top = 301
     Width = 190
     Height = 21
     DataField = 'CEP'
     DataSource = ds_padrao
-    TabOrder = 11
+    TabOrder = 10
   end
-  object DBEdit9: TDBEdit [23]
+  object DBEdit9: TDBEdit [22]
     Left = 230
     Top = 301
     Width = 190
     Height = 21
     DataField = 'TELEFONE'
     DataSource = ds_padrao
-    TabOrder = 12
+    TabOrder = 11
   end
-  object DBEdit10: TDBEdit [24]
+  object DBEdit10: TDBEdit [23]
     Left = 434
     Top = 301
     Width = 190
@@ -193,14 +194,14 @@ inherited Frm_cliente: TFrm_cliente
     DataSource = ds_padrao
     TabOrder = 13
   end
-  object db_cadastro: TDBEdit [25]
+  object db_cadastro: TDBEdit [24]
     Left = 188
     Top = 80
     Width = 134
     Height = 21
     DataField = 'CADASTRO'
     DataSource = ds_padrao
-    TabOrder = 14
+    TabOrder = 12
     OnChange = db_cadastroChange
   end
   inherited q_padrao: TFDQuery
