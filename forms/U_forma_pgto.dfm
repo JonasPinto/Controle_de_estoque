@@ -1,7 +1,5 @@
 inherited Frm_forma_pgto: TFrm_forma_pgto
   Caption = 'CADASTRO DE FORMAS DE PAGAMENTO'
-  ClientHeight = 365
-  ExplicitHeight = 394
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -32,8 +30,7 @@ inherited Frm_forma_pgto: TFrm_forma_pgto
     ExplicitWidth = 824
   end
   inherited Panel2: TPanel
-    Top = 324
-    ExplicitTop = 430
+    ExplicitTop = 324
     ExplicitWidth = 824
     inherited DBNavigator1: TDBNavigator
       Hints.Strings = ()
