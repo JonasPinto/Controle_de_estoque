@@ -5299,7 +5299,7 @@ object Frm_principal: TFrm_principal
     Top = 96
   end
   object MainMenu1: TMainMenu
-    Left = 48
+    Left = 64
     Top = 96
     object Cadastro1: TMenuItem
       Caption = 'Cadastro'
